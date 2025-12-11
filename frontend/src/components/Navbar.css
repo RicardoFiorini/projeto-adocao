@@ -1,0 +1,21 @@
+/* frontend/src/components/Navbar.css */
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Sombra mais suave */
+  position: sticky; /* Fica no topo ao rolar */
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* O .container já existe no seu HTML (dentro do Navbar.js) 
+  e será estilizado pelo index.css para centralizar o conteúdo.
+*/
+
+.navbar-brand {
+  color: #00796B; /* Nova cor primária (Verde-azulado) */
+  font-size: 1.75rem;
+  font-weight: 700; /* Mais forte */
+  text-decoration: none;
+}

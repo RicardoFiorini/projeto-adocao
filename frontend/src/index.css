@@ -1,0 +1,38 @@
+/* frontend/src/index.css */
+
+/* Importa a fonte 'Lato' do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Reset básico e definição da fonte global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F8F9FA; /* Um cinza muito claro, mais suave que o branco total */
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1140px; /* Um breakpoint padrão e moderno */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Garante que imagens não quebrem o layout */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

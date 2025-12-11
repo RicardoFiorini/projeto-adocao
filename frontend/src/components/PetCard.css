@@ -1,0 +1,65 @@
+/* frontend/src/components/PetCard.css */
+.pet-card {
+  background-color: #fff;
+  border-radius: 12px; /* Bordas mais arredondadas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra mais suave e elevada */
+  overflow: hidden;
+  transition: all 0.3s ease-in-out; /* Transição mais suave para tudo */
+  display: flex; /* Usamos flex-column para garantir alinhamento interno */
+  flex-direction: column;
+}
+
+.pet-card:hover {
+  transform: translateY(-8px); /* Efeito de "levantar" mais pronunciado */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.pet-card-img {
+  width: 100%;
+  height: 220px; /* Altura fixa para todos os cards */
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+.pet-card-body {
+  padding: 1.5rem;
+  /* Faz o corpo do card crescer para preencher o espaço (bom para o flex) */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pet-card-title {
+  font-size: 1.35rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #00796B; /* Cor primária */
+  font-weight: 700;
+}
+
+.pet-card-text {
+  font-size: 1rem;
+  color: #757575; /* Cinza para texto secundário */
+  margin-bottom: 1.5rem;
+  /* Empurra o botão para baixo */
+  flex-grow: 1;
+}
+
+.pet-card-btn {
+  display: inline-block;
+  background-color: #FF7043; /* Nova cor de CTA (Call to Action) - Laranja/Coral */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+.pet-card-btn:hover {
+  background-color: #F4511E; /* Tom mais escuro para o hover */
+  transform: scale(1.03); /* Leve zoom */
+}

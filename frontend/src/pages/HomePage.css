@@ -1,0 +1,20 @@
+/* frontend/src/pages/HomePage.css */
+.home-title {
+  text-align: center;
+  color: #212121; /* Um preto mais suave */
+  margin-bottom: 2.5rem; /* Mais espaço */
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.pet-list {
+  display: grid;
+  /* Mágica do Grid Responsivo:
+    - 'repeat': Repita o padrão
+    - 'auto-fit': Crie quantas colunas couberem
+    - 'minmax(280px, 1fr)': Cada coluna deve ter no mínimo 280px.
+       Se sobrar espaço, divida-o igualmente (1fr).
+  */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem; /* Espaçamento perfeito entre os cards */
+}
